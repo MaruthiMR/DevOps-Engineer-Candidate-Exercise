@@ -38,7 +38,7 @@ data "aws_subnets" "selected" {
 resource "aws_security_group" "web_sg" {
   name        = "web_sg"
   description = "Allow SSH and HTTP"
-   vpc_id      = var.vpc_id
+  vpc_id      = var.vpc_id
 
   ingress {
     description = "Allow SSH"
@@ -65,12 +65,12 @@ resource "aws_security_group" "web_sg" {
 }
 
 resource "aws_instance" "web_server" {
-  ami                    = "ami-03edbe403ec8522ed"  # Amazon Linux 2 in ap-south-1
+  ami                    = "ami-03edbe403ec8522ed" # Amazon Linux 2 in ap-south-1
   instance_type          = "t2.micro"
   subnet_id              = data.aws_subnets.selected.ids[0]
   vpc_security_group_ids = [aws_security_group.web_sg.id]
-  monitoring = true  # This is for Enable detailed monitoring
-  iam_instance_profile = aws_iam_instance_profile.cw_instance_profile.name
+  monitoring             = true # This is for Enable detailed monitoring
+  iam_instance_profile   = aws_iam_instance_profile.cw_instance_profile.name
   key_name               = var.key_name
   user_data              = file("userdata1.sh")
 
