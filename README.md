@@ -72,7 +72,7 @@ Before proceeding with the setup, make sure you have the following:
 
     b) A security group that allows inbound HTTP (port 80) and SSH (port 22) traffic.
 
-    ![Web Server Screenshot](3.png)
+    ![Web Server Screenshot](Scrreshots/5.png)
 
 8. Access the Web Server
   Once the EC2 instance is created, you can access the "Hello Elsevier" page hosted on the web server:
@@ -83,7 +83,7 @@ Before proceeding with the setup, make sure you have the following:
 
 9. Open a web browser and visit the IP address. You should see the "Hello Elsevier" page.
 
-![Web Server Screenshot](3.png)
+![Web Server Screenshot](Scrreshots/3.png)
 
 10. To view the metrics in CloudWatch:
 
@@ -91,7 +91,7 @@ Before proceeding with the setup, make sure you have the following:
 
 Choose EC2 to see the metrics like CPU utilization utilization (it will show the some basic metrics, for adanvace metric cllection we have to deploy the cloudwatchagent to our EC2).
 
-![Web Server Screenshot](3.png)
+![Web Server Screenshot](Scrreshots/watch.png)
 
 12. Cleanup
 
@@ -101,11 +101,6 @@ Run the following command to destroy the infrastructure:
 
        ```bash
     terraform destory
-
-
-
-
-![Web Server Screenshot](3.png)
 
 13. For more metric collection need to depoly cloudwatch agent 
 
@@ -129,7 +124,7 @@ Run the following command to destroy the infrastructure:
    terraform plan
    terraform apply
 
-![Web Server Screenshot](3.png)
+![Web Server Screenshot](Scrreshots/2.png)
 
 
 
