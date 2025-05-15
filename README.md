@@ -68,7 +68,7 @@ Before proceeding with the setup, make sure you have the following:
 
     a) An EC2 instance with a public IP address.
 
-    ![Web Server Screenshot](4.png)
+    ![Web Server Screenshot](Scrreshots/4.png)
 
     b) A security group that allows inbound HTTP (port 80) and SSH (port 22) traffic.
 
