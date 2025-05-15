@@ -126,6 +126,8 @@ Run the following command to destroy the infrastructure:
 
 ![Web Server Screenshot](Scrreshots/2.png)
 
+![Web Server Screenshot](Scrreshots/metrics.png)
+
 
 
 
