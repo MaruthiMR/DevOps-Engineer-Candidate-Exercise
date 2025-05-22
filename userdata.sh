@@ -33,3 +33,4 @@ cat <<EOF > /var/www/html/index.html
 </html>
 EOF
 
+aws s3 cp /var/www/html/index.html s3://maruthimrdevopss3bucket/index.html
