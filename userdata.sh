@@ -33,8 +33,4 @@ cat <<EOF > /var/www/html/index.html
 </html>
 EOF
 
-aws s3api put-object \
-    --bucket maruthimr_devops_s3_bucket \
-    --key /var/www/html/index.html \
-    --body index.html
-
+aws s3 cp /var/www/html/index.html s3://maruthimrdevopss3bucket/index.html
